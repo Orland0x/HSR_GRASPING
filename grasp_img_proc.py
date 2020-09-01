@@ -1,16 +1,16 @@
 import tensorflow as tf
 import numpy as np
 
-FLAGS = tf.app.flags.FLAGS
+FLAGS = tf.compat.v1.flags.FLAGS
 
-tf.app.flags.DEFINE_integer('image_size', 224,
+tf.compat.v1.flags.DEFINE_integer('image_size', 224,
                             """Provide square images of this size.""")
-tf.app.flags.DEFINE_integer('num_preprocess_threads', 12, 
+tf.compat.v1.flags.DEFINE_integer('num_preprocess_threads', 12, 
                             """Number of preprocessing threads per tower. """
                             """Please make this a multiple of 4.""")
-tf.app.flags.DEFINE_integer('num_readers', 12,
+tf.compat.v1.flags.DEFINE_integer('num_readers', 12,
                             """Number of parallel readers during train.""")
-tf.app.flags.DEFINE_integer('input_queue_memory_factor', 12,
+tf.compat.v1.flags.DEFINE_integer('input_queue_memory_factor', 12,
                             """Size of the queue of preprocessed images. """
                             """Default is ideal but try smaller values, e.g. """
                             """4, 2 or 1, if host memory is constrained. See """

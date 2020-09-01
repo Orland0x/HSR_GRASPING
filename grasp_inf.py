@@ -2,9 +2,9 @@
 Inference model for grasping
 '''
 import tensorflow as tf
-FLAGS = tf.app.flags.FLAGS
+FLAGS = tf.compat.v1.flags.FLAGS
 
-tf.app.flags.DEFINE_bool('trainable', True,
+tf.compat.v1.flags.DEFINE_bool('trainable', True,
                             """Computes or not gradients for learning.""")
 
 def conv2d_s2(x, W):

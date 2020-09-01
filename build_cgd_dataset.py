@@ -12,12 +12,12 @@ import os
 import glob
 import numpy as np
 
-dataset = '/root/dataset/cornell_grasping_dataset'
+dataset = './dataset/'
 
 class ImageCoder(object):
     def __init__(self):
-        self._sess = tf.Session()
-        self._decode_png_data = tf.placeholder(dtype=tf.string)
+        self._sess = tf.compat.v1.Session()
+        self._decode_png_data = tf.compat.v1.placeholder(dtype=tf.string)
         self._decode_png = tf.image.decode_png(self._decode_png_data, channels=3)
     def decode_png(self, image_data):
         return self._sess.run(self._decode_png,
@@ -72,12 +72,12 @@ def main():
     validation_file = os.path.join(dataset, 'validation-cgd')
     print(train_file)
     print(validation_file)
-    writer_train = tf.python_io.TFRecordWriter(train_file)
-    writer_validation = tf.python_io.TFRecordWriter(validation_file)
+    writer_train = tf.io.TFRecordWriter(train_file)
+    writer_validation = tf.io.TFRecordWriter(validation_file)
    
     # Creating a list with all the image paths
     folders = range(1,11)
-    folders = ['0'+str(i) if i<10 else '10' for i in folders]
+    folders = ['0'+str(i) if i<2 else '02' for i in folders]
     filenames = []
     for i in folders:
         for name in glob.glob(os.path.join(dataset, i, 'pcd'+i+'*r.png')):
