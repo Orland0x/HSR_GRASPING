@@ -1,0 +1,6 @@
+devel_space: /home/orlandothefraser/catkin_ws/devel
+install: false
+install_space: /home/orlandothefraser/catkin_ws/install
+profile: default
+source_space: /home/orlandothefraser/catkin_ws/src
+workspace: /home/orlandothefraser/catkin_ws
