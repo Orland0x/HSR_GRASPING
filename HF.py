@@ -1,4 +1,4 @@
-#Loading grasp variables
+
 import csv
 import numpy as np
 import rospy
@@ -7,7 +7,9 @@ from sensor_msgs.msg import Image
 
             
 def get_grasp(grasp_file):
-    
+    '''
+    Helper function to obtain current grasp from file
+    '''
     with open(grasp_file,'r') as f: 
         Reader=csv.reader(f) 
         rows=list(Reader)
