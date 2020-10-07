@@ -1,2 +1,0 @@
-CMake Error: The source directory "/home/orlandothefraser/catkin_ws/build/bt/ -DPYTHON_LIBRARY=/usr/lib/x86_64-linux-gnu/libpython3.6m.so" does not exist.
-Specify --help for usage, or press the help button on the CMake GUI.
