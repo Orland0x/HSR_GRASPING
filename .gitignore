@@ -2,6 +2,8 @@
 *.out
 *.png
 *.gv
+*.csv
+.ipynb_checkpoints/*
 logdir/*
 catkin_ws/build/*
 catkin_ws/devel/*
