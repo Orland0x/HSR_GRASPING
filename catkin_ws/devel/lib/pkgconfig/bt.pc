@@ -1,1 +1,0 @@
-/home/orlandothefraser/catkin_ws/devel/.private/bt/lib/pkgconfig/bt.pc

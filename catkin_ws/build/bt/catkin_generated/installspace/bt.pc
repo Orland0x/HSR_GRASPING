@@ -1,8 +1,0 @@
-prefix=/home/orlandothefraser/catkin_ws/install
-
-Name: bt
-Description: Description of bt
-Version: 0.1.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 
