@@ -1,3 +1,10 @@
 *.pyc
 *.out
+*.png
 logdir/*
+catkin_ws/build/*
+catkin_ws/devel/*
+catkin_ws/venv/*
+catkin_ws/__pycache__/*
+*LICENSE
+
