@@ -2,7 +2,7 @@
 <launch>
   <include file="$(find hsrb_gazebo_launch)/launch/include/hsrb_gazebo_common.xml" >
     <arg name="map" value="$(find tmc_potential_maps)/maps/white_space/map.yaml" />
-    <arg name="world_name" value="/home/orlandothefraser/robot-grasp-detection_git/catkin_ws/src/test_world.world" />
+    <arg name="world_name" value="/home/orlandothefraser/robot-grasp-detection_git/catkin_ws/scripts/test_world.world" />
     <arg name="robot_pos" value="-x 0 -y 0 -z 0 -Y 0" />
     <arg name="use_laser_odom" value="false" />
   </include>

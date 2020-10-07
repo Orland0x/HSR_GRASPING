@@ -4,6 +4,9 @@
 *.gv
 *.csv
 .ipynb_checkpoints/*
+catkin_ws/.ipynb_checkpoints/*
+catkin_ws/.rosinstall
+catkin_ws/.rosinstall.bak
 logdir/*
 catkin_ws/build/*
 catkin_ws/devel/*
