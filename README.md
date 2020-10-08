@@ -38,11 +38,17 @@ pip install -r requirements.txt
 
 ## Running on the HSR simulation
 
-An instance of the HSR simulation needs to be running first. We have provided a basic test setup that can be launched via:
+An instance of the HSR simulation needs to be running first. The HSR simulation requires a Python 2 environment, so one need to activate that before launching.  We have provided a basic test setup that can be launched via:
 
 ```bash
 roslaunch catkin_ws/launch/test_world.launch
 ```
+
+We interact with the simulation via the Python API. A grasping pipeline has been developed for the test setup and can be executed through the jupyter notebook at ./catkin_ws/testbook.ipynb. This code can serve as as template, to be modified for any particular task where the grasping algorithm is required. 
+
+
+
+
 
 
 ## Datasets
