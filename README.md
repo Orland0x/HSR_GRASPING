@@ -36,6 +36,15 @@ This code was developed with Python 3.6 on Ubuntu 18.04.  Python requirements ca
 pip install -r requirements.txt
 ```
 
+## Running on the HSR simulation
+
+An instance of the HSR simulation needs to be running first. We have provided a basic test setup that can be launched via:
+
+```bash
+roslaunch catkin_ws/launch/test_world.launch
+```
+
+
 ## Datasets
 
 Currently, both the [Cornell Grasping Dataset](http://pr.cs.cornell.edu/grasping/rect_data/data.php) and
