@@ -23,3 +23,6 @@ roslaunch catkin_ws/launch/test_world.launch
 
 We interact with the simulation via the Python API. A grasping pipeline has been developed for the test setup and can be executed through the jupyter notebook at ./catkin_ws/testbook.ipynb. This code can serve as as template, to be modified for any particular task where the grasping algorithm is required. 
 
+## Demo
+
+A video is attatched which shows a demo of the pipeline with the test environment. 
