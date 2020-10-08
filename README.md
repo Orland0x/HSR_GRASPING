@@ -1,3 +1,5 @@
+# HSR Grasping
+This algorithm allows a HSR robot to execute grasps of fine objects such as pens or cutlery using the hand RGB camera for feedback. The approach uses 2 fully convolutional neural networks, one to estimate a depth map, and the other to predict the optimal grasp from the depth map. These algorithms are elaborated on i more detail in the report pdf document.  
 
 # Generative Grasping CNN (GG-CNN)
 
