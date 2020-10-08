@@ -1,31 +1,6 @@
 # HSR Grasping
 This algorithm allows a HSR robot to execute grasps of fine objects such as pens or cutlery using the hand RGB camera for feedback. The approach uses 2 fully convolutional neural networks, one to estimate a depth map, and the other to predict the optimal grasp from the depth map. These algorithms are elaborated on i more detail in the report pdf document.  
 
-# Generative Grasping CNN (GG-CNN)
-
-The GG-CNN is a lightweight, fully-convolutional network which predicts the quality and pose of antipodal grasps at every pixel in an input depth image.  The lightweight and single-pass generative nature of GG-CNN allows for fast execution and closed-loop control, enabling accurate grasping in dynamic environments where objects are moved during the grasp attempt.
-
-This repository contains the implementation of the Generative Grasping Convolutional Neural Network (GG-CNN) from the paper:
-
-**Closing the Loop for Robotic Grasping: A Real-time, Generative Grasp Synthesis Approach**
-
-*[Douglas Morrison](http://dougsm.com), [Peter Corke](http://petercorke.com), [Jürgen Leitner](http://juxi.net)*
-
-Robotics: Science and Systems (RSS) 2018
-
-[arXiv](https://arxiv.org/abs/1804.05172) | [Video](https://www.youtube.com/watch?v=7nOoxuGEcxA)
-
-If you use this work, please cite:
-
-```text
-@inproceedings{morrison2018closing,
-	title={{Closing the Loop for Robotic Grasping: A Real-time, Generative Grasp Synthesis Approach}},
-	author={Morrison, Douglas and Corke, Peter and Leitner, J\"urgen},
-	booktitle={Proc.\ of Robotics: Science and Systems (RSS)},
-	year={2018}
-}
-```
-
 **Contact**
 
 Any questions or comments contact [Orlando Fraser](mailto:orlando.fraser@oriel.ox.ac.uk).
