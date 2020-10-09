@@ -8,7 +8,7 @@ from sensor_msgs.msg import Image
             
 def get_grasp(grasp_file):
     '''
-    Helper function to obtain current grasp from file
+    Helper function to obtain current grasp in image coordinates from file and convert it to the hand 3D coordinate system. 
     '''
     with open(grasp_file,'r') as f: 
         Reader=csv.reader(f) 
